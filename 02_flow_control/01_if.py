@@ -71,4 +71,30 @@ else:
 # se recomienda usar funciones para evitar el anidado de condiciones
 
 
+numero = 5
+if numero: # true
+    print("El numero no es cero")
 
+numero = 0
+if numero: # false
+    print("Aqui no entrara nunca")
+
+numero = ""
+if numero: 
+    print("El numero no es vacio")
+
+numero = 3
+es_el_tres = numero == 3
+if es_el_tres:
+    print("El numero es 3")
+  
+     
+print("La condicion Ternaria")     
+# se puede usar una sola linea para evaluar una condicion if-else 
+
+edad = 17
+
+mensaje = "Eres mayor de edad" if edad >= 18 else "Eres menor de edad"
+print(mensaje) # se ejecuta si la condición es verdadera dentro del bloque if ()
+# se ejecuta si la condición es falsa dentro del bloque else ()
+# se puede usar una sola linea para evaluar una condicion if-else
