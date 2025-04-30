@@ -101,8 +101,8 @@ else: print("No se encontró coincidencia")
 
 # |: Coincide con una alternativa (OR)
 
-text = "platano, manzana, naranja"
+text = "platano, manzana, naranja, banana"
 pattern = r"platano|banana"  # Coincide con "platano" o "manzana"
 matches = re.findall(pattern, text)
-if matches: print("Coincidencia encontrada")
-else: print("No se encontró coincidencia")
+print(matches)  # Coincide con "platano" o "banana"
+
