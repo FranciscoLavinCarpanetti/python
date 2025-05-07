@@ -21,3 +21,14 @@ if response.status_code == 200:
 soup = BeautifulSoup(response.text, "html.parser")
 print(f"Revisando la pagina: {url}")
     
+
+titulo_pagina = soup.title.string
+
+if titulo_pagina:
+    print(f"\033[46mEl titulo de la pagina es: {titulo_pagina}\033[0m")
+    if len(titulo_pagina) <70:
+        print("\033[32m El titulo de la pagina tiene la longitud correcta\033[0m")
+    else:  
+        print("El titulo de la pagina es demasiado largo")  
+
+        
